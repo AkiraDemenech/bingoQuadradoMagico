@@ -7,7 +7,9 @@ por_pessoa = 3
 # quantas, por página, já estarão completas
 gratuitas = 1 
 
-quantidade = 204 # páginas
+quantidade = 100 # páginas
+
+# para todas as páginas (do gabarito e das cartelas) poderem ser impressas de 4 em 4 (sem deixar nada em branco)
 quantidade += 24 - (quantidade % 24)
 total = quantidade * por_pessoa # cartelas
 

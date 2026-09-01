@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.3in, paper=a6paper]{geometry}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+%opening
+\title{\textbf{Bingo}}
+%\author{Cartelas}
+
+\newcommand{\cartela}[9]{
+	
+	\vfill 
+%	\hfill 
+	
+{
+	\ttfamily
+	
+	\begin{tabular}{|| c | c | c ||}
+		\hline \hline
+		#1 & #2 & #3 \\
+		\hline
+		#4 & #5 & #6 \\
+		\hline
+		#7 & #8 & #9 \\
+		\hline \hline
+	\end{tabular}
+}
+	
+%	\hfill
+	\vfill 
+	
+}
+
+\begin{document}
+%\maketitle
+
+\centering
+%	Quadrados mágicos completos
+\begin{multicols}{3}
+	
+%	5 1 3
+%	\cartela{8}{1}{6}{3}{5}{7}{4}{9}{2}
+%	\cartela{2}{9}{4}{7}{5}{3}{6}{1}{8}
+%	\cartela{4}{9}{2}{3}{5}{7}{8}{1}{6}
+
+	\input{respostas}
+	
+\end{multicols}
+
+% cartelas propriamente ditas
+\Huge 
+\sffamily
+ 	
+\input{normal}
+
+%\input{problema}
+
+\end{document}
